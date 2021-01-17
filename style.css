@@ -1,0 +1,101 @@
+/* 1. 行内元素水平居中 */
+
+.inline-parent {
+  background-color: red;
+  text-align: center;
+}
+.inline-parent {
+  background-color: red;
+  width: fit-content;
+  margin: auto;
+}
+
+/* 2. 行内元素垂直居中 */
+.inline-parent {
+  height: 200px;
+  line-height: 200px;
+  background-color: red;
+}
+
+/* 3. 块级元素水平居中 */
+.block-parent {
+  background-color: red;
+}
+.block-child {
+  width: 100px;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+/* 4. 块级元素水平垂直居中 */
+.block-parent {
+  position: relative;
+  height: 200px;
+  background-color: red;
+}
+.block-child {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  background-color: blue;
+}
+
+/* using transform */
+.block-parent {
+  position: relative;
+  height: 200px;
+  background-color: red;
+}
+.block-child {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blue;
+}
+
+/* using margin */
+.block-parent {
+  position: relative;
+  height: 200px;
+  background-color: red;
+}
+.block-child {
+  position: absolute;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* using padding */
+.block-parent {
+  padding: 20px;
+  background-color: red;
+}
+.block-child {
+  height: 200px;
+  background-color: blue;
+}
+
+/* using flex */
+.block-parent {
+  background-color: red;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-child {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
